@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <div class="form">
+    <!-- <div class="form">
         <label for="nome">Nome</label>
         <input type="text" id="nome">
     </div>
@@ -23,8 +23,29 @@
     <div id="resultado">
         <br><br><br><br>
     </div>
+    <hr> -->
+    <h1>Demo Local Storage</h1>
 
+    <h4>Adicionar Pessoas</h4>
+    <div class="form">
+        <label for="nomeObj">Nome</label>
+        <input class="formValue" type="text" id="nomeObj">
+    </div>
     
+    <div class="form">
+        <label for="idadeObj">Idade</label>    
+        <input class="formValue" type="text" id="idadeObj">
+    </div>
+
+    <div class="form">
+        <label for="emailObj">Email</label>    
+        <input class="formValue" type="text" id="emailObj">
+    </div>
+
+    <button type="button" id="adicionar" onclick="salvarPessoa()">Adicionar</button>
+
+    <h4>Pessoas Cadastradas</h4>
+    <div id="listaPessoas"></div>
 
     <script src="./script.js"></script>
 </body>
