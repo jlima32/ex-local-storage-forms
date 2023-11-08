@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Local Storage</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -24,28 +25,35 @@
         <br><br><br><br>
     </div>
     <hr> -->
-    <h1>Demo Local Storage</h1>
+    <div id="container">
 
-    <h4>Adicionar Pessoas</h4>
-    <div class="form">
-        <label for="nomeObj">Nome</label>
-        <input class="formValue" type="text" id="nomeObj">
+        <h1>Demo Local Storage</h1>
+        
+        
+
+        <div id="form">
+            
+            <h4>Adicionar Pessoas</h4>
+
+            <div class="controle-form">
+                <input class="formValue" type="text" id="nomeObj" placeholder="nome" required>
+            </div>
+            
+            <div class="controle-form">  
+                <input class="formValue" type="text" id="idadeObj" placeholder="idade" required>
+            </div>
+            
+            <div class="controle-form">  
+                <input class="formValue" type="email" id="emailObj" placeholder="email@site.com" required>
+            </div>
+            
+            <button type="submit" id="adicionar" class="btnSubmit" onclick="salvarPessoa()">ADICIONAR</button>
+            
+            <h4>Pessoas Cadastradas</h4>
+            <div id="listaPessoas"></div>
+            
+        </div>
     </div>
-    
-    <div class="form">
-        <label for="idadeObj">Idade</label>    
-        <input class="formValue" type="text" id="idadeObj">
-    </div>
-
-    <div class="form">
-        <label for="emailObj">Email</label>    
-        <input class="formValue" type="text" id="emailObj">
-    </div>
-
-    <button type="button" id="adicionar" onclick="salvarPessoa()">Adicionar</button>
-
-    <h4>Pessoas Cadastradas</h4>
-    <div id="listaPessoas"></div>
 
     <script src="./script.js"></script>
 </body>
