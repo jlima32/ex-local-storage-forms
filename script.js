@@ -38,9 +38,17 @@ function salvarPessoa(){
         idade: document.getElementById('idadeObj').value,
         email: document.getElementById('emailObj').value
     }
-    criarPessoa(pessoa);
-    limparFormulario();
-    listarPessoas()
+
+
+    //Verifica se existe algum campo vazio
+    if (pessoa.nome === '' || pessoa.idade === '' || pessoa.email === ''){
+        alert('Campos Vazios! preencha corretamente')
+    }else{
+        criarPessoa(pessoa);
+        limparFormulario();
+        listarPessoas()
+    }
+    
 }
 
 function limparFormulario(){

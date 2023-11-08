@@ -103,6 +103,6 @@ input[type="reset"]:active {
 
 .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
