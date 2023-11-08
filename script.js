@@ -59,22 +59,6 @@ function listarPessoas(){
 
 listarPessoas()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  //Recuperar valor do Local Storage
 //  document.getElementById('resultado').innerHTML = localStorage.getItem('dados');
 
