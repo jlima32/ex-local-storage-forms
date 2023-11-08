@@ -8,16 +8,16 @@
 
 body {
     background-color: #ccc;
-    display: flex;
-    height: 100vh;
     padding: 10px;
+    
 }
 
 #container{
     margin: 0 auto;
-    width: 50%;
+    width: 95%;
     background-color: #fff;
     border: 1px solid #888;
+    padding-bottom: 20px;
 }
 
 h1, h4, h5{
