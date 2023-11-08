@@ -52,9 +52,15 @@ function limparFormulario(){
 function listarPessoas(){
     let pessoas = JSON.parse(localStorage.getItem('pessoas'));
     document.getElementById('listaPessoas').innerHTML = '';
-    for (let i = 0; i < pessoas.length; i++) {
-        document.getElementById('listaPessoas').innerHTML += `<p>Nome: ${pessoas[i].nome} || Idade: ${pessoas[i].idade} || Email: ${pessoas[i].email} || <button type="button" class="btnExcluir" onclick=excluirPessoa(${i})>Excluir</button> </p>`
+    if (pessoas.length === 0){
+        document.querySelector('h5').innerHTML = 'Nenhum registro encontrado';
+    }else{
+        for (let i = 0; i < pessoas.length; i++) {
+            document.querySelector('h5').innerHTML = 'Cadastros';
+            document.getElementById('listaPessoas').innerHTML += `<p>Nome: ${pessoas[i].nome} || Idade: ${pessoas[i].idade} || Email: ${pessoas[i].email} || <button type="button" class="btnExcluir" onclick=excluirPessoa(${i})>Excluir</button> </p>`
+        }
     }
+    
 }
 
 listarPessoas()
