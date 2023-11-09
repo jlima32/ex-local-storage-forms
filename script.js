@@ -65,7 +65,7 @@ function listarPessoas(){
     }else{
         for (let i = 0; i < pessoas.length; i++) {
             document.querySelector('h5').innerHTML = 'Cadastros';
-            document.getElementById('listaPessoas').innerHTML += `<p>Nome: ${pessoas[i].nome} || Idade: ${pessoas[i].idade} || Email: ${pessoas[i].email} || <button type="button" class="btnExcluir" onclick=excluirPessoa(${i})>Excluir</button> </p>`
+            document.getElementById('listaPessoas').innerHTML += `<p class="linhas">Nome: ${pessoas[i].nome} || Idade: ${pessoas[i].idade} || Email: ${pessoas[i].email} <button type="button" class="btnExcluir" onclick=excluirPessoa(${i})>Excluir</button> </p>`
         }
     }
     

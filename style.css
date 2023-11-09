@@ -12,12 +12,13 @@ body {
     
 }
 
-#container{
+.container{
     margin: 0 auto;
     width: 95%;
     background-color: #fff;
     border: 1px solid #888;
     padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h1, h4, h5{
@@ -25,7 +26,16 @@ h1, h4, h5{
     margin: 10px 0;
 }
 
-#form{
+#listaPessoas{
+    text-align: center;
+}
+
+.linhas{
+    border-bottom: 1px solid #bdbbbb;
+    margin-bottom: 10px;
+}
+
+#form,#listaPessoas{
     display: flex;
     margin: 0 auto;
     border: 1px solid #888;
@@ -47,6 +57,9 @@ h1, h4, h5{
     width: 100%;
 }
 
+.linhas{
+    width: 100%;
+}
 
 
 .btnSubmit{
@@ -105,4 +118,6 @@ input[type="reset"]:active {
     display: flex;
     justify-content: space-between;
 }
+
+
 
