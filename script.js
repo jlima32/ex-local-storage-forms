@@ -61,7 +61,7 @@ function listarPessoas(){
     let pessoas = JSON.parse(localStorage.getItem('pessoas'));
     document.getElementById('listaPessoas').innerHTML = '';
     if (pessoas.length === 0){
-        document.querySelector('h5').innerHTML = 'Nenhum registro encontrado';
+        document.getElementById('listaPessoas').innerHTML = '<p class="linhas"> Nenhum registro encontrado </p>';
     }else{
         for (let i = 0; i < pessoas.length; i++) {
             document.querySelector('h5').innerHTML = 'Cadastros';

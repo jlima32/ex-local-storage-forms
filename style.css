@@ -51,10 +51,20 @@ h1, h4, h5{
 }
 
 
-.controle-form input{
+.controle-form input, select{
     padding: 10px;
     outline-style: none;
     width: 100%;
+}
+
+
+fieldset{
+    outline-style: none;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;    
+
 }
 
 .linhas{
